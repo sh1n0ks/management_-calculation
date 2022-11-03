@@ -1,0 +1,182 @@
+*{
+  padding:0;
+  margin:0;
+}
+header{
+  width:100%;
+  height:7em;
+  background:#000;
+}
+header h1{
+  font-size:5em;
+  text-align:center;
+  color:#fff;
+}
+/* 出力 */
+.result{
+  border:1px solid #000;
+  margin:3em 1em;
+  padding:2em;
+}
+/* 入力 */
+.input{
+  border:1px solid #000;
+  margin:3em 1em;
+  padding:2em;
+}
+.side{
+  display:flex;
+}
+.side select{
+  padding:0.2em;
+  width:10.4em;
+}
+.side input{
+  width:8em;
+  font-size:1.5em;
+  padding:0.1em;
+}
+.input-content p{
+  font-size:2em;
+  margin-bottom:0.5em;
+  width:25vw;
+}
+.button-content{
+  width:100%;
+  text-align:center;
+}
+.button-content button{
+  width:25%;
+  padding:0.5em;
+  margin-top:1em;
+}
+/* ラジオボックス案 */
+fieldset{
+  border:none;
+  padding:0;
+  margin:0;
+  margin-top:-1em;
+}
+.rii{
+  clip:rect(1px, 1px, 1px, 1px);
+  position:absolute !important;
+}
+
+.ril{
+  display:inline-block;
+  padding:1em 1.5em;
+  border-radius:5px;
+  transition:all .2s;
+  font-size:0.7em;
+}
+
+.rii:checked + .ril{
+  background:#B54A4A;
+  color:#fff;
+  text-shadow:0 0 1px rgba(0,0,0,.7);
+}
+
+.rii:focus + .ril{
+  outline-color:#9932cc;
+  outline-offset:-2px;
+  outline-style:auto;
+  outline-width:5px;
+}
+
+/* 未入力時borderを赤色に設定 */
+.red_border{
+  border:1px solid #ff0000;
+}
+
+/* -----PC用----- */
+@media(min-width:1024px){
+  .contents-wrapper{
+    width:100%;
+    display:flex;
+  }
+  /* 出力 */
+  .result{
+    width:50%;
+  }
+  .result h1{
+    margin:0.3em 0;
+  }
+  /* 入力 */
+  .input{
+    width:50%;
+  }
+  .font-size{
+    border:1px solid;
+    font-size:1.2em;
+  }
+}
+
+/* -----大きめスマホ用----- */
+@media(max-width:1023px){
+  header{
+    width:100%;
+    height:3em;
+    background:#000;
+  }
+  header h1{
+    font-size:2em;
+    text-align:center;
+    color:#fff;
+  }
+  /* 出力 */
+  .result{
+    border:1px solid #000;
+    margin:0.5em;
+    padding:0.5em;
+  }
+  .result h1{
+    font-size:1.5em;
+  }
+  /* 入力 */
+  .input{
+    border:1px solid #000;
+    margin:0.5em;
+    padding:0.5em;
+  }
+  .input-content p{
+    font-size:1.5em;
+    width:50vw;
+  }
+  .side select{
+    padding:0.6em;
+    width:12.3em;
+  }
+  .side input{
+    width:7.5em;
+    font-size:1.3em;
+    padding:0.1em;
+  }
+  .ril{
+    padding:0.5em 0.3em;
+  }
+}
+
+/* -----小さめスマホ用----- */
+@media(max-width:375px){
+  /* 出力 */
+  .result h1{
+    font-size:1em;
+  }
+  /* 入力 */
+  .input-content p{
+    font-size:1em;
+    width:48vw;
+  }
+  .side select{
+    padding:0.2em;
+    width:10.2em;
+  }
+  .side input{
+    padding:0.1em;
+    width:8em;
+    font-size:1em;
+  }
+  fieldset{
+    margin-top:-0.5em;
+  }
+}
