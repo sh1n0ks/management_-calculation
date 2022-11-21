@@ -1,4 +1,3 @@
-/* const BigNumber = require('bignumber.js'); */
 
 const button = document.getElementById("button");
 let branch = false;
