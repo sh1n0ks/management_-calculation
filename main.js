@@ -86,7 +86,7 @@ button.addEventListener('click',()=>{
   }
   // 片側規格の取得
   const sOne = document.getElementById("one").value;
-  if (branch == true && aOne == ""){
+  if (branch == true && sOne == ""){
     document.getElementById("one").classList.add("red_border");
   } else {
     document.getElementById("one").classList.remove("red_border");
